@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+@model ImageonDBModel
+<html>
+<body>
+    <p>Click on the "Choose File" button to upload a file:</p>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/png" />
+        <button class="btn btn-success" type="submit" asp-controller="Image" asp-action="Upload">Upload to Database</button>
+    </form>
+</body >
+</html >
